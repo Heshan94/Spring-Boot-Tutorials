@@ -15,9 +15,12 @@ public class DemoApplication {
 		ApplicationContext applicationContext = SpringApplication.run(DemoApplication.class, args);
 		
 		BinarySearch bs = applicationContext.getBean(BinarySearch.class);
-//		BinarySearch bs = new BinarySearch(new QuickSort());
-		int temp= bs.search(new int[] {1,2,4,5});
-		System.out.println(temp);
+		BinarySearch bs1 = applicationContext.getBean(BinarySearch.class);
+		
+		System.out.println(bs);
+		System.out.println(bs1);
+//		int temp= bs.search(new int[] {1,2,4,5});
+//		System.out.println(temp);
 		
 	}
 
