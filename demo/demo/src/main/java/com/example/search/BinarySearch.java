@@ -1,5 +1,8 @@
 package com.example.search;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -19,5 +22,15 @@ public class BinarySearch {
 	public int  search(int[] array){
 		sortAlgo.sort(array);
 		return 5;
+	}
+	
+	@PostConstruct
+	public void postConstruct(){
+		System.out.println("Post Construct");
+	}
+	
+	@PreDestroy
+	public void preDestroy(){
+		System.out.println("Pre Destroy");
 	}
 }
