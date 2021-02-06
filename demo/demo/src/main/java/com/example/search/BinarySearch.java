@@ -21,7 +21,7 @@ public class BinarySearch {
 	
 	public int  search(int[] array){
 		sortAlgo.sort(array);
-		return 5;
+		return 3;
 	}
 	
 	@PostConstruct
