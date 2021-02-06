@@ -16,7 +16,7 @@ import com.example.demo.DemoApplication;
 public class BinarySearchTest {
 	@Autowired
 	BinarySearch bs;
-	
+
 	@Test
 	public void test() {
 		int result = bs.search(new int[] {});
